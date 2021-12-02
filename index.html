@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+      <meta charset="UTF-8">    
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Created by @UHAAHM -->  
+          <!--🥳 To celebrate 🥳-->
+               <!-- Gembie's Bday -->
+        <title> Its ur Birthday sis!</title>  
+      
+   
+      
+  
+  <!-- Copied some codes for Educational purpose only -->
+  
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet"/> <link href="https://cdn.jsdelivr.net/sweetalert2/6.4.3/sweetalert2.min.css" rel="stylesheet"/> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>   
+
+        
+    </head>
+    <body>
+    				<style>
+    								     
+@import url( https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap );
+@import url( https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap );
+
+body {
+  background-color: #002233;
+    margin: 0;
+}
+
+.logo{
+  width:12vw;
+  height: 12vw;
+  display: inline;
+  position: absolute;
+  top: 4vw;
+  left: 5vw;
+}
+
+.bar_1{
+  width:6vw;
+  height: 1.5vw;
+  background-Color: palegreen;
+  border-radius:2vw;
+  opacity: .9;
+  position: absolute;
+  top:10vw;
+  left:85vw;
+}
+
+.bar_2{
+  width:6vw;
+  height:1.5vw;
+  background-Color: palegreen;
+  border-radius:2vw;
+  opacity: .9;
+  position: absolute;
+  top:7.5vw;
+  left:85vw;
+}
+
+.circle{
+  width: 10vw;
+  height:10vw;
+  background-color: #57A6BE;
+  opacity: .8;
+  border-radius: 50%;
+  position: absolute;
+  top:4.5vw;
+  left:82.9vw;
+}
+
+
+.logo_img{
+    width:90vw;
+    position: absolute;
+    top:70vw;
+    left:9vw;
+    display: block;
+    animation-name: cycle;
+    animation-duration:3s;
+    animation-iteration-count:infinite ;
+    animation-timing-function:ease-in-out;
+    animation-delay:.2s;
+}
+
+.above_wind_1{
+    width:22vw;
+    height:2.2vw;
+    position:absolute ;
+    top:90vw;
+    left:60vw;
+    border-radius:1.5vw;
+    animation-name: above_wind_1;
+    animation-duration:3.5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease-in-out;
+    animation-delay:.8s;    
+}
+
+.above_wind_2{
+    width:12vw;
+    height:1.5vw;
+    position:absolute ;
+    top:95vw;
+    left:58vw;
+    border-radius:10px;
+    animation-name: above_wind_2;
+    animation-duration:3.5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease-in-out;
+    animation-delay:1.4s;    
+}
+
+
+.top_wind{
+    width:22vw;
+    height:1.6vw;
+    position:absolute ;
+    top:118vw;
+    left:38vw;
+    border-radius:1.5vw;
+    animation-name: top_wind;
+    animation-duration:3.5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease-in-out;
+    animation-delay:.7s;
+}
+
+.middle_wind{
+    position:absolute ;
+    top:122vw;
+    left:37vw;
+    border-radius:10px;
+    animation-name: middle_wind;
+    animation-duration:3.5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease-in-out;
+}
+
+.bottom_wind{
+    position:absolute ;
+    top:126vw;
+    left:38.8vw;
+    border-radius:10px;
+    animation-name: bottom_wind;
+    animation-duration:3.5s;
+    animation-iteration-count:infinite ;
+    animation-timing-function: ease-in-out;
+    animation-delay:1.2s;
+}
+
+@keyframes above_wind_1 {
+    0%{
+        background-color:darkcyan;
+        width:0vw;
+        height:2.2vw;
+    }
+    100%{
+        background-color:palegreen;
+        width:22vw;
+        height:2.2vw;
+        left:30vw;   
+    }
+}
+
+@keyframes above_wind_2 {
+    0%{
+        background-color:darkcyan;
+        width:0vw;
+        height:1.8vw;
+    }
+    100%{
+        background-color:palegreen;
+        width:12vw;
+        height:1.8vw;
+        left:30vw;  
+    }
+}
+
+
+@keyframes top_wind {
+    0%{
+        background-color:darkcyan;
+        width:0vw;
+        height:1.6vw;
+    }
+    100%{
+        background-color:palegreen;
+        width:14vw;
+        height:1.6vw;
+        left:18.5vw;   
+    }
+}
+
+@keyframes middle_wind {
+    0%{
+        background-color:darkcyan;
+        width:0px;
+        height:1.8vw;
+    }
+    100%{
+        background-color:palegreen;
+        width:18.5vw;
+        height:1.8vw;
+        left:15vw;   
+    }
+}
+
+@keyframes bottom_wind {
+    0%{
+        background-color:darkcyan;
+        width:0px;
+        height:1.4vw;
+    }
+    100%{
+        background-color:palegreen;
+        width:12vw;
+        height:1.6vw;
+        left:18vw;
+   
+    }
+}
+
+@keyframes cycle {
+    0%{
+       top:72vw;
+    }
+    50%{
+       top:70vw;
+       left:10vw;
+    }
+    100%{
+       top:72vw;
+    }
+}
+
+h2{
+  font-size: 6vw;
+  padding-top: 15vw;
+  padding-left: 5vw;
+  color: #fff;
+  font-family:  Quicksand , sans-serif;
+  font-weight: 600;
+}
+
+.bio{
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  font-size: 4.5vw;
+  position: absolute;
+  top:35vw;
+  left: 5vw;
+  padding-right: 20vw;
+  color: #fff;
+ 
+}
+
+#visual{
+  width: 100vw;
+  height: 95vw;
+  margin-top: -50vw;
+}
+
+.extra{
+  width: 100%;
+  height: 70vw;
+  background-color: #44939a;
+  margin-top: -5vw;
+}
+
+.Bottom_svg{
+  width: 100vw;
+  height: 95vw;
+  margin-top: -5vw;
+}
+
+h3{
+  font-size: 5.5vw;
+  color: #ddd;
+  font-family:  Lato , sans-serif;
+  font-weight: 600;
+  margin-top: -48vw;
+  margin-left: 60vw;
+}
+
+.text_1{
+  font-size: 5vw;
+  color: #bbb;
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  padding-left: 5vw;
+  padding-right: 10vw;
+}
+
+.credit{
+  font-size: 5vw;
+  color: #bbb;
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  margin-left: 75vw;
+  margin-top: -2vw;
+}
+
+h4{
+  font-size: 5.5vw;
+  color: #ddd;
+  font-family:  Lato , sans-serif;
+  font-weight: 600;
+  margin-top: 15vw;
+  padding-left: 5vw;
+}
+
+.text_2{
+  font-size: 5vw;
+  color: #bbb;
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  padding-left: 7vw;
+  padding-right: 10vw;
+}
+
+.mountain_biking{
+  width: 100%;
+  height: 100vw;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url( https://te.legra.ph/file/c35d1c770d30e4716ccff.jpg );
+  background-size:cover;
+}
+
+.text_3{
+  font-size: 4.8vw;
+  color: #bbb;
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  text-align: center;
+  padding-left: 7vw;
+  padding-right: 10vw;
+}
+
+.Downhill_mountain_biking{
+width: 100%;
+height: 100vw;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url( https://te.legra.ph/file/fe292b0b9217d51c919dc.jpg );
+background-size:cover;
+}
+
+.Road_cycling{
+width: 100%;
+height: 100vw;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url( https://te.legra.ph/file/66cfdbdc0476e959088f9.jpg );
+background-size:cover;
+}
+
+.footer_1{
+  width: 80vw;
+  height: 10vw;
+  background-color: #0FBED8;
+  opacity: .8;
+  margin-top: 15vw;
+}
+
+.footer_2{
+  width: 80vw;
+  height: 10vw;
+  background-color: #2AF598;
+  margin-top: 8vw;
+  margin-left: 20vw;
+}
+
+span{
+  font-size: 5.5vw;
+  color: #000;
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+  padding-top: 2vw;
+}
+
+.credit_2{
+  font-size: 4.8vw;
+  color: #000;
+  font-family:  Lato , sans-serif;
+  font-weight: 100;
+  text-align: center;
+  display: block;
+}
+
+.fb{
+  width: 15vw;
+  height: 15vw;
+  padding-top: 10vw;
+  padding-left: 10vw;
+}
+
+.insta{
+  width: 15vw;
+  height: 15vw;
+  padding-left: 5vw;
+}
+
+.twitter{
+  width: 15vw;
+  height: 15vw;
+  padding-left: 5vw;
+}
+
+.discord{
+  width: 15vw;
+  height: 15vw;
+  padding-left: 5vw;
+}
+
+    				</style>
+             <!-- Logo -->
+      <img src="https://te.legra.ph/file/ccaccef5fe34c75109866.png" class="logo">
+       
+            <!-- Navbar -->
+       <div class="circle"></div>
+       <div class="bar_1"></div>
+       <div class="bar_2"></div>
+       
+            <!-- Description -->
+       <h2> Happy Birthday</br> Apurwa 🥳🎉🎁 </h2>
+       <p class="bio"> 
+           Hope your special day brings you all that your heart desires! </br> #Gembi</p>
+      
+      <img src="https://i.ibb.co/nRkFsPw/Svg.png" id="visual">
+       
+         <!-- Cycling Animation -->
+       <img src="https://te.legra.ph/file/45b031d7c2751dac19619.jpg" class="logo_img">
+   <!-- <div class="above_wind_1"></div>
+      <div class="above_wind_2"></div>
+      
+      <div class="top_wind"></div>
+      <div class="middle_wind"></div>  
+      <div class="bottom_wind"></div> -->
+       
+      <div class="extra"></div>
+       
+       <img src="https://i.ibb.co/m8TCNxV/Svg.png" class="Bottom_svg">
+       
+          <!-- Paragraph -->
+       <h3> 🤜Let's Enjoy! </h3>
+       
+       <p class="text_1"> "True friends are like diamonds—bright, beautiful, valuable, and always in style." 
+
+
+ </p>
+       
+       <p class="credit"> —Nicole Richie </p>
+       
+       <h4> Friendship the Bond💪</h4>
+      
+       <p class="text_2">Count your age by friends, not years. Count your life by smiles, not tears.
+</p>
+       
+       <div class="mountain_biking"></div>
+       
+       <p class="text_3">Birthdays come once a year, but best friends are once in a lifetime. I m so happy to call you mine! Let me guess, i should be worst from the world but thanks for tolerating me and giving me wonderful time!
+<p>
+       
+       <h4> 🎊YOU GUYS🎊 </h4>
+       
+       <div class="Downhill_mountain_biking"></div>
+       
+       <p class="text_3">I am so honored to call you my best friend. You deserve every good thing that comes to you on your birthday and beyond. Generally, i'm also a calm person like M. Dhony but when i about to meet u i was excited:| That excitement engage me to understand u sister. it was really nice of u. <p>
+     
+       <h4> Your Journey🛫</h4>
+       
+      <div class="Road_cycling"></div>
+      
+       <p class="text_3"> You re not just a best friend, but you re also a true friend. Thank you for everything you do for me. I hope you have the happiest of birthdays! Hope to see u again soon:( Peace👍
+<p>
+         
+         <!-- Follow Setup -->
+      <div class="footer_1"> 
+        <span>💫 Stay Safe & Blessed 💜 </span>
+      </div>
+      
+      <img src="https://te.legra.ph/file/743c7d9bb73acce74e329.png" class="fb">
+      <img src="https://te.legra.ph/file/ba4084b271fbcff7812dc.png" class="insta">
+      <img src="https://te.legra.ph/file/15584ff297bc7e3aedfbc.png" class="twitter">
+      <img src="https://te.legra.ph/file/381738c7f744c723ffe49.png" class="discord">
+      
+      <div class="footer_2">
+        <span class="credit_2">&copy; 2021 All Rights Reserved.</span>
+      </div>
+   
+         <!-- Audio Setup -->
+      <audio controls style="display:none;" loop id="audio">
+     <source id="audio-source"
+     src="https://www.mboxdrive.com/Birthday_No_Copyright_Music_Instrumental__Background_Music_No_Copyright.mp3"> </audio>
+     
+    <script>
+window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play(){ document.getElementById("audio").play();
+}
+             
+ swal("🥳 Let's Celebrate 🥳", " This Wonderful Day \n 4th Dec❄." ,"success");
+    </script>
+ 
+    </body>
+</html>
